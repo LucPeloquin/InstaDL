@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Save",
+  "version": "1.0",
+  "description": "Save files to a specified folder with Alt + left click",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html"
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Save Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 8px 15px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #4285f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quick Save Options</h1>
+  
+  <div class="form-group">
+    <label for="saveFolder">Default Save Folder:</label>
+    <input type="text" id="saveFolder" placeholder="e.g., Downloads/QuickSave">
+    <p>Specify the folder path relative to your Chrome downloads directory.</p>
+  </div>
+  
+  <button id="save">Save Settings</button>
+  
+  <div class="note">
+    <h3>How to use:</h3>
+    <p>1. Hold the Alt key and left-click on an image, link, video, or audio element</p>
+    <p>2. The file will be saved to your specified folder automatically</p>
+    <p>3. You can also right-click and select "Quick Save" from the context menu</p>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html> 
