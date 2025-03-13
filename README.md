@@ -43,3 +43,33 @@ A Chrome extension that allows you to save images, links, videos, and audio file
 3. Click "Save Settings" to apply your changes
 
 ## File Structure
+
+quick-save-extension/
+├── manifest.json # Extension configuration
+├── background.js # Background service worker
+├── content.js # Content script for detecting Alt+click
+├── options.html # Options page HTML
+├── options.js # Options page functionality
+└── README.md # This documentation
+
+
+## Limitations
+
+- Chrome security restrictions prevent extensions from saving files to arbitrary locations on your computer. Files will be saved to subfolders within your default Chrome downloads folder.
+- Some websites may prevent the extension from working due to their security policies or the way they handle media elements.
+
+## Privacy
+
+This extension:
+- Does not collect any user data
+- Does not communicate with external servers
+- Only accesses the URLs of media elements you explicitly click on
+- Requires minimal permissions to function
+
+## License
+
+[MIT License](LICENSE)
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue if you have suggestions for improvements or bug fixes.
